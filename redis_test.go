@@ -10,6 +10,10 @@ func Test_Redis(t *testing.T) {
     _Drop(t)
 }
 
+func Test_Failed(t *testing.T) {
+	t.Errorf("Failed!")
+}
+
 func _GetNum(t *testing.T) {
     if _, err := GetNum(); err != nil {
         t.Errorf("get num meets error %v\n", err)
