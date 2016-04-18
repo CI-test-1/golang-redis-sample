@@ -17,5 +17,5 @@ before_script:
 
 script:
   - export GOPATH=/gopath
-  - go get -t golang-redis-sample
+#  - go get -t golang-redis-sample
   - go test golang-redis-sample
